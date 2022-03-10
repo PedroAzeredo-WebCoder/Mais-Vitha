@@ -1,5 +1,5 @@
 * {
-  font-family: arial;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -21,13 +21,24 @@ p {
   @return calc($size / 16px) * 1rem;
 }
 
-h1 {
-  font-size: clamp(calculateRem(35px), 6vw, calculateRem(40px));
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
 }
 
-//h2 {}
+h1 {
+  font-size: clamp(calculateRem(25px), 6vw, calculateRem(30px));
+}
 
-//h3 {}
+h2 {
+  font-size: clamp(calculateRem(20px), 6vw, calculateRem(25px));
+}
+
+h3 {
+  font-size: clamp(calculateRem(18px), 6vw, calculateRem(20px));
+}
 
 //h4 {}
 
@@ -35,7 +46,13 @@ h1 {
 
 //h6 {}
 
-// small{}
+small {
+  font-size: clamp(calculateRem(10px), 6vw, calculateRem(12px));
+}
+
+p {
+  font-size: clamp(calculateRem(12px), 6vw, calculateRem(14px));
+}
 
 iframe {
   display: block;

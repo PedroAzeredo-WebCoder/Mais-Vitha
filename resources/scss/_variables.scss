@@ -6,7 +6,7 @@ $sm: 540px;
 $md: 720px;
 $lg: 960px;
 $xl: 1140px;
-$xxl: 1640px;
+$xxl: 1366px;
 
 /*containers size*/
 $container-max-widths: (
@@ -32,15 +32,18 @@ $grid-breakpoints: (
 
 
 /*colors*/
-/*
+
+$primary: #cc5c4d;
+$secondary: #687235;
+$gray: #e6a89e;
+$light: #fae3d8;
+$dark: #9f573b;
+
+
 $theme-colors: (
         "primary":    $primary,
         "secondary":  $secondary,
-        "success":    $success,
-        "info":       $info,
-        "warning":    $warning,
-        "danger":     $danger,
         "light":      $light,
-        "dark":       $dark
+        "gray":       $gray,
+        "dark":       $dark,
 );
-*/
