@@ -6,32 +6,41 @@ header {
         overflow: hidden;
 
         .nav-item {
+            .nav-link {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 100%;
+                    border: 1px solid $dark;
+                    background-color: transparent;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                    transition: all .8 ease-in-out;
+
+                }
+
+                &:hover {
+                    &::before {
+                        transition: all .8 ease-in-out;
+                        bottom: 0;
+                    }
+                }
+            }
+
             &.active {
                 .nav-link {
-                    position: relative;
-
                     &::before {
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        border-radius: 100%;
-                        border: 1px solid $dark;
-                        background-color: transparent;
-                        position: absolute;
                         bottom: 0;
-                        left: 50%;
-                        margin-right: -50%;
-                        transform: translate(-50%, -50%);
+                        background-color: $dark;
                         transition: all .8 ease-in-out;
                         animation-name: active;
-                        animation-duration: 1.5s;
-                    }
-
-                    &:hover {
-                        &::before {
-                            background-color: $dark;
-                            transition: all .8 ease-in-out;
-                        }
+                        animation-duration: 1s;
                     }
                 }
             }
