@@ -1,4 +1,46 @@
 header {
     background: rgb(250, 227, 216);
     background: linear-gradient(180deg, rgba(250, 227, 216, 1) 0%, rgba(2, 0, 36, 0) 100%);
+
+    .main-menu {
+        overflow: hidden;
+
+        .nav-item {
+            &.active {
+                .nav-link {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 100%;
+                        border: 1px solid $dark;
+                        background-color: transparent;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, -50%);
+                        transition: all .8 ease-in-out;
+                        animation-name: active;
+                        animation-duration: 1.5s;
+                    }
+
+                    &:hover {
+                        &::before {
+                            background-color: $dark;
+                            transition: all .8 ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        svg {
+            width: 50px;
+        }
+    }
 }
