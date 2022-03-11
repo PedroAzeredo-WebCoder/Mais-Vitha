@@ -46,7 +46,9 @@
         <section class="container">
             <nav class="navbar navbar-expand-lg justify-content-between align-items-center">
                 <div>
-                    <a class="navbar-brand" href="tpl-home.php">
+                    <a href="<?php //echo home_url(); 
+                                ?>" title="<?php //s3_logo_title() 
+                                                                    ?>" class="text-start">
                         <svg width="70" height="" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M160 37.9C158.1 38.9 155.2 41.6 153.5 43.9C151.1 47.3 150.5 49.3 150.2 54.8C149.9 61 150.1 61.8 152.8 65.6C158.1 72.9 169.7 76.3 176.9 72.6C182.7 69.6 188 61.1 188 55C188 41.6 171.7 31.6 160 37.9ZM173.2 50.7C177.3 54.4 174.2 61 168.4 61C162.9 61 160.1 54.8 163.7 50.8C165.7 48.6 170.7 48.5 173.2 50.7Z" fill="#9F573B" stroke="#9F573B" class="svg-elem-1"></path>
                             <path d="M320 37.8C312.8 41.8 307.9 51.5 309.4 59.1C310.8 66.9 320.1 73.9 329 74C335.1 74 339.8 71.3 343.8 65.6C352.1 53.3 344.1 37.2 329.2 36.2C324.9 36 322.6 36.4 320 37.8ZM333 51C335.4 53.4 335.5 55.8 333.4 58.8C330.2 63.4 322 60.6 322 54.9C322 49.3 328.9 46.9 333 51Z" fill="#9F573B" stroke="#9F573B" class="svg-elem-2"></path>
@@ -125,7 +127,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex social">
+                <div class="d-lg-flex d-none social">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
