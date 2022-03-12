@@ -36,28 +36,31 @@
     ?>
 </head>
 
-<body <?php //body_class(); 
+<body <?php //body_class();
         ?>>
 
     <?php //wp_body_open(); 
     ?>
 
-    <header class="">
-        <section class="container">
+    <header class="fixed-top">
+        <div class="container">
             <nav class="navbar navbar-expand-lg justify-content-between align-items-center">
                 <div>
-                    <a href="<?php //echo home_url(); ?>" title="<?php //s3_logo_title(); ?>" title="<?php //echo bloginfo('name'); ?>">
-                       <?php include("assets/img/logo.svg");?>
+                    <a href="<?php //echo home_url(); 
+                                ?>" title="<?php //s3_logo_title(); 
+                                            ?>" title="<?php //echo bloginfo('name'); 
+                                                                                ?>">
+                        <?php include("assets/img/logo.svg"); ?>
                     </a>
                 </div>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarCentralLibras" aria-controls="navbarCentralLibras" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMaisVitha" aria-controls="navbarMaisVitha" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="btn-toggle">
                         <span class="line"></span>
                         <span class="line"></span>
                         <span class="line"></span>
                     </div>
                 </button>
-                <div class="collapse navbar-collapse main-menu" id="navbarCentralLibras">
+                <div class="collapse navbar-collapse main-menu py-2" id="navbarMaisVitha">
                     <ul class="nav justify-content-center w-100 flex-lg-row flex-column">
                         <li class="nav-item active">
                             <a class="nav-link" href="tpl-home.php">Home</a>
@@ -75,26 +78,45 @@
                             <a class="nav-link" href="index.php">Contato</a>
                         </li>
                     </ul>
+                    <div class="d-lg-none d-flex social">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="d-lg-flex d-none social">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
+                            <a class="nav-link font-18 pl-0" href="#" target="_blank" title="Facebook">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
+                            <a class="nav-link font-18 pl-0" href="#" target="_blank" title="Facebook">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="#" target="_blank" title="Facebook">
+                            <a class="nav-link font-18 pl-0" href="#" target="_blank" title="Facebook">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </section>
+        </div>
     </header>

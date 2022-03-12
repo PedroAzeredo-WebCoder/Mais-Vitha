@@ -91,6 +91,13 @@ iframe {
   overflow: hidden;
 }
 
+//fonts
+@for $i from 10 through 30 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
 // margins
 @mixin offset-margin($margin, $value) {
   margin-#{$margin}: $value;

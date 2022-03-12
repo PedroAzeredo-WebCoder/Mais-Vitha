@@ -1,6 +1,5 @@
 header {
-    background: rgb(250, 227, 216);
-    background: linear-gradient(180deg, rgba(250, 227, 216, 1) 0%, rgba(2, 0, 36, 0) 100%);
+    background: $light;
 
     .main-menu {
         overflow: hidden;
@@ -27,8 +26,10 @@ header {
 
                 &:hover {
                     &::before {
-                        transition: all .8 ease-in-out;
                         bottom: 0;
+                        transition: all .8 ease-in-out;
+                        animation-name: active;
+                        animation-duration: 1s;
                     }
                 }
             }
@@ -47,9 +48,93 @@ header {
         }
     }
 
+    .navbar-toggler {
+        &:focus {
+            box-shadow: none;
+        }
+
+        .btn-toggle {
+            & .line {
+                width: 35px;
+                height: 3px;
+                border-radius: 30px;
+                background-color: $dark;
+                display: block;
+                margin: 6px 0 0 auto;
+                text-align: right;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+
+                &:nth-child(2) {
+                    width: 25px;
+                }
+
+                &:nth-child(3) {
+                    width: 15px;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.active {
+                & .line {
+                    margin: 10px auto;
+
+                    &:nth-child(1) {
+                        -webkit-transform: translateY(13px) rotate(45deg);
+                        -ms-transform: translateY(13px) rotate(45deg);
+                        -o-transform: translateY(13px) rotate(45deg);
+                        transform: translateY(13px) rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        width: 35px;
+                        -webkit-transform: translateY(-13px) rotate(-45deg);
+                        -ms-transform: translateY(-13px) rotate(-45deg);
+                        -o-transform: translateY(-13px) rotate(-45deg);
+                        transform: translateY(-13px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
     @include media-breakpoint-down(md) {
+
         svg {
             width: 50px;
+        }
+
+        .main-menu {
+            .nav-item {
+                &.active {
+                    .nav-link {
+                        &::before {
+                            display: block;
+                            top: 50%;
+                            left: auto;
+                            right: 28px;
+                            margin-right: 0;
+                            transform: translate(0, -50%);
+                        }
+                    }
+                }
+
+                .nav-link {
+                    padding: 0.5rem;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

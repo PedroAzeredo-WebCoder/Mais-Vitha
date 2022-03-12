@@ -19,19 +19,25 @@ jQuery(function () {
 
     $(window).scroll(function () {
         mainHeight();
-    })
+    });
 
     $(window).on('resize', function () {
         mainHeight();
-    })
+    });
 
     $(window).ready(function () {
         mainHeight();
-    })
+    });
 
     $(window).on('load', function () {
         mainHeight();
-    })
+    });
+
+    $(document).ready(function () {
+        $(".btn-toggle").click(function () {
+            $(this).toggleClass("active");
+        });
+    });
 
     //Adiciona margin entre header e a sessao, quando o header for fixo
     function mainHeight() {
