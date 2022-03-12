@@ -55,7 +55,7 @@ header {
 
         .btn-toggle {
             & .line {
-                width: 35px;
+                width: 30px;
                 height: 3px;
                 border-radius: 30px;
                 background-color: $dark;
@@ -67,11 +67,11 @@ header {
                 transition: all 0.3s ease-in-out;
 
                 &:nth-child(2) {
-                    width: 25px;
+                    width: 20px;
                 }
 
                 &:nth-child(3) {
-                    width: 15px;
+                    width: 10px;
                 }
             }
 
