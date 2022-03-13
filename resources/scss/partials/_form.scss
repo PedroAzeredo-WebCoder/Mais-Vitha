@@ -1,5 +1,41 @@
-form{
-    br{
+form {
+    color: #bbbbbb;
+
+    br {
         display: none;
+    }
+
+    .field {
+        position: relative;
+
+        label {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translate(0, -50%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        input {
+            &:focus {
+                box-shadow: none;
+
+                +label {
+                    background-color: $white;
+                    color: $primary;
+                    transform: translate(0, -163%);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            &[value] {
+                +label {
+                    background-color: $white;
+                    color: $primary;
+                    transform: translate(0, -163%);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
     }
 }

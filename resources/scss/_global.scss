@@ -91,6 +91,10 @@ iframe {
   overflow: hidden;
 }
 
+textarea {
+  resize: none;
+}
+
 //fonts
 @for $i from 10 through 30 {
   .font-#{$i} {
