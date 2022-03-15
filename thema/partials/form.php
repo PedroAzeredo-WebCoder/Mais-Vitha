@@ -11,7 +11,6 @@
                     </div>
                 </div>
                 <form action="">
-
                     <div class="form-group row py-2">
                         <div class="col field">
                             <input type="text" class="form-control py-3" id="nome" name="nome" required>
@@ -22,25 +21,21 @@
                             <label for="email" class="px-2">E-mail</label>
                         </div>
                     </div>
-
-
                     <div class="form-group row py-2">
-                        <div class="col field">
+                        <div class="col field label-before">
                             <input type="tel" class="form-control py-3" id="telefone" name="telefone" required>
                             <label for="telefone" class="px-2">Telefone/WhatsApp</label>
                         </div>
                         <div class="col field">
-                            <input type="text" class="form-control py-3" id="assunto" name="assunto" required>
+                            <input type="text" class="form-control py-3" id="assunto" name="assunto">
                             <label for="assunto" class="px-2">Assunto</label>
                         </div>
                     </div>
-
                     <div class="form-group row py-2">
                         <div class="col field">
                             <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Mensagem"></textarea>
                         </div>
                     </div>
-
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                         <label class="form-check-label" for="inlineCheckbox1">Aceito receber e-mails.</label>

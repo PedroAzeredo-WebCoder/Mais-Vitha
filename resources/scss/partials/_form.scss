@@ -16,24 +16,19 @@ form {
             transition: all 0.3s ease-in-out;
         }
 
+        .label-before {
+            background-color: $white;
+            color: $primary;
+            transform: translate(0, -163%);
+            transition: all 0.3s ease-in-out;
+        }
+
         input {
             &:focus {
                 box-shadow: none;
 
                 +label {
-                    background-color: $white;
-                    color: $primary;
-                    transform: translate(0, -163%);
-                    transition: all 0.3s ease-in-out;
-                }
-            }
-
-            &[value] {
-                +label {
-                    background-color: $white;
-                    color: $primary;
-                    transform: translate(0, -163%);
-                    transition: all 0.3s ease-in-out;
+                    @extend .label-before;
                 }
             }
         }
