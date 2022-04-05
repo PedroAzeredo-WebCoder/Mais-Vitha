@@ -31,12 +31,6 @@ form {
                     @extend .label-before;
                 }
             }
-
-            &:not(:empty) {
-                +label {
-                    @extend .label-before;
-                }
-            }
         }
     }
 }

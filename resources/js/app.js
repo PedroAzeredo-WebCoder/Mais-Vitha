@@ -16,6 +16,7 @@ jQuery(function () {
     mainHeight();
     themeColor();
     eyePass();
+    values();
 
     $(window).scroll(function () {
         mainHeight();
@@ -101,16 +102,17 @@ jQuery(function () {
         }
     $('.mask-phone , [type="tel"]').mask(SPMaskBehavior, spOptions);
 
-    // function values() {
-    //     let inputs = $('input');
-    //     inputs.each(function (i) {
-    //         if (inputs.eq(i).val() != "") {
-    //             console.log(inputs.eq(i).val())
-    //             //inputs.eq(i).next().addClass('label-before');
-    //         }
-    //     });
-    // }
-
+    function values() {
+        let inputs = $('input');
+        $(inputs).change(function () {
+            inputs.each(function (i) {
+                if (inputs.eq(i).val() != "") {
+                    console.log(inputs.eq(i).val())
+                    inputs.eq(i).next().addClass('label-before');
+                }
+            });
+        });
+    }
 
     //Adiciona Validação para campo de e-mail
     // $('.mask-email , [type="email"]').blur(function () {
