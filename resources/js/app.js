@@ -107,7 +107,6 @@ jQuery(function () {
         $(inputs).change(function () {
             inputs.each(function (i) {
                 if (inputs.eq(i).val() != "") {
-                    console.log(inputs.eq(i).val())
                     inputs.eq(i).next().addClass('label-before');
                 }
             });
