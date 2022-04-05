@@ -101,13 +101,24 @@ jQuery(function () {
         }
     $('.mask-phone , [type="tel"]').mask(SPMaskBehavior, spOptions);
 
+    // function values() {
+    //     let inputs = $('input');
+    //     inputs.each(function (i) {
+    //         if (inputs.eq(i).val() != "") {
+    //             console.log(inputs.eq(i).val())
+    //             //inputs.eq(i).next().addClass('label-before');
+    //         }
+    //     });
+    // }
+
+
     //Adiciona Validação para campo de e-mail
-    $('.mask-email , [type="email"]').blur(function () {
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if ($('.mask-email , [type="email"]').val().match(mailformat)) {
-            return false;
-        } else {
-            alert("Você digitou um endereço de e-mail inválido!");
-        }
-    });
+    // $('.mask-email , [type="email"]').blur(function () {
+    //     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    //     if ($('.mask-email , [type="email"]').val().match(mailformat)) {
+    //         return false;
+    //     } else {
+    //         alert("Você digitou um endereço de e-mail inválido!");
+    //     }
+    // });
 });

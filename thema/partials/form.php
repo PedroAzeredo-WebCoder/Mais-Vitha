@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center align-items-end">
             <div class="col-lg-6 text-end pe-lg-0">
-                <img src="assets/img/img-form.png" alt="">
+                <!-- <img src="assets/img/img-form.png" alt=""> -->
             </div>
             <div class="col-lg-6 ps-lg-0">
                 <div class="row my-3 justify-content-center align-items-center">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="form-group row py-2">
-                        <div class="col field label-before">
+                        <div class="col field">
                             <input type="tel" class="form-control py-3" id="telefone" name="telefone" required>
                             <label for="telefone" class="px-2">Telefone/WhatsApp</label>
                         </div>
