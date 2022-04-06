@@ -12,21 +12,21 @@
                 </div>
                 <form action="">
                     <div class="form-group row py-2">
-                        <div class="col field">
+                        <div class="col-lg-6 field mb-lg-0 mb-4">
                             <input type="text" class="form-control py-3" id="nome" name="nome" required>
                             <label for="nome" class="px-2">Nome</label>
                         </div>
-                        <div class="col field">
+                        <div class="col-lg-6 field mb-lg-0 mb-4">
                             <input type="email" class="form-control py-3" id="email" name="email" required>
                             <label for="email" class="px-2">E-mail</label>
                         </div>
                     </div>
                     <div class="form-group row py-2">
-                        <div class="col field">
+                        <div class="col-lg-6 field mb-lg-0 mb-4">
                             <input type="tel" class="form-control py-3" id="telefone" name="telefone" required>
                             <label for="telefone" class="px-2">Telefone/WhatsApp</label>
                         </div>
-                        <div class="col field">
+                        <div class="col-lg-6 field mb-lg-0 mb-4">
                             <input type="text" class="form-control py-3" id="assunto" name="assunto">
                             <label for="assunto" class="px-2">Assunto</label>
                         </div>
